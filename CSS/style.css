@@ -1,0 +1,74 @@
+/* CSS RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eceef8;
+}
+
+input[type='text'] {
+    border: none;
+    border-bottom: 1px solid rgb(192, 189, 189);
+    outline: none;
+    width: 63%;
+}
+
+input[type='text']:focus {
+    border-bottom: 2px solid rgb(63, 81, 181);
+}
+
+.br-12 {
+    border-radius: 12px;
+}
+
+input[type=radio],
+input[type=checkbox] {
+    transform: scale(1.2);
+}
+
+.btncontainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+
+.btncontainerWidth {
+    width: 58%;
+}
+
+input[type=submit] {
+    background-color: #3f51b5;
+    color: white;
+}
+
+input[type=reset] {
+    color: #3f51b5;
+    border: none;
+}
+
+.formhead {
+    font-weight: 600;
+}
+
+#div2 {
+    border-top: 12px solid rgb(63, 81, 181);
+    border-radius: 21px;
+}
+
+@media only screen and (max-width: 600px) {
+    .btncontainerWidth {
+        width: 50%;
+    }
+    .modal-lg {
+        width: 300px;
+        margin: 5px auto;
+    }
+    btn-lg,
+    formhead {
+        color: green;
+        font-size: 0.79rem;
+    }
+}
