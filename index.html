@@ -11,38 +11,41 @@
     <link rel="shortcut icon" href="https://ssl.gstatic.com/docs/forms/device_home/ios_120.png" type="image/x-icon">
     <link rel="stylesheet" href="CSS/style.css">
     <title>We are here for you</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="JavaScript/index.js"></script>
 </head>
 
 <body>
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content shadow br-12">
-            <img class="br-12" id="imgLogo" src="Image/CardImage.png" alt="">
-        </div>
-    </div>
-    <div id="div2" class="modal-dialog modal-lg">
-        <div class="modal-content shadow br-12">
-            <div class="modal-body py-3 px-2 mx-2 my-3">
-                <h2 class="CardHead">We are here for you</h2>
-                <p class="cardSub py-1 my-0">United Well-being Foundatin</p>
-                <hr>
-                <p class="formhead py-1 my-3">
-                    Email <span style="color: red;" class="mx-1">*</span>
-                </p>
-                <input type="text" id="NameInput" placeholder="Your Answer" required>
-            </div>
-        </div>
-    </div>
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content shadow br-12">
-            <div class="modal-body py-3 px-2 mx-2 my-3">
-                <p class="cardSub py-1 my-0 fw-bold">We assure you that any information you enter will be treated confidentially. Everyone who works in this organisation adheres to our privacy policy. So don't worry, your information is secure with us.
-                </p>
-            </div>
-        </div>
-    </div>
-    <form action="/" method="post" id="wellBeing">
-        <div class="modal-dialog modal-lg">
+    <form action="index.php" method="post" id="wellBeing">
+        <div id="div1" class="modal-dialog modal-lg">
             <div class="modal-content shadow br-12">
+                <img class="br-12" id="imgLogo" src="Image/CardImage.png" alt="">
+            </div>
+        </div>
+        <div id="div2" class="modal-dialog modal-lg ">
+            <div class="modal-content shadow br-12">
+                <div class="modal-body py-3 px-2 mx-2 my-3">
+                    <h2 class="CardHead">We are here for you</h2>
+                    <p class="cardSub py-1 my-0">United Well-being Foundatin</p>
+                    <hr>
+                    <p class="formhead py-1 my-3">
+                        Email <span style="color: red;" class="mx-1">*</span>
+                    </p>
+                    <input type="text" id="EmailInput" placeholder="Your Answer" required>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div id="div3" class="modal-dialog modal-lg ">
+            <div class="modal-content shadow br-12">
+                <div class="modal-body py-3 px-2 mx-2 my-3">
+                    <p class="cardSub py-1 my-0 fw-bold">We assure you that any information you enter will be treated confidentially. Everyone who works in this organisation adheres to our privacy policy. So don't worry, your information is secure with us.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="div4" class="modal-dialog modal-lg ">
+            <div id="div4" class="modal-content shadow br-12 div4">
                 <div class="modal-body py-3 px-2 mx-2 my-3">
                     <p class="formhead py-1">
                         Name <span style="color: red;" class="mx-1">*</span>
@@ -51,88 +54,87 @@
                 </div>
             </div>
         </div>
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content shadow br-12">
-                <div class="modal-body py-3 px-2 mx-2 my-3">
+        <div id="div5" class="modal-dialog modal-lg ">
+            <div class="modal-content shadow br-12 ">
+                <div class="modal-body py-3 px-2 mx-2 my-3" id="GenRadio">
                     <p class="formhead py-1">
                         Gender <span style="color: red;" class="mx-1">*</span>
                     </p>
-                    <div class="form-check" id="GenRadio">
+                    <div class="form-check" id="GenRadio1">
                         <label class="form-check-label py-1">
-                          <input type="radio" class="form-check-input" id="GenRadio1" name="optradio">Male
+                          <input type="radio" class="form-check-input" id="GenRadio1" name="optradio" required>Male
                         </label>
                     </div>
-                    <div class="form-check py-1">
+                    <div class="form-check py-1" id="GenRadio2">
                         <label class="form-check-label">
-                          <input type="radio" class="form-check-input" id="GenRadio2" name="optradio">Female
+                          <input type="radio" class="form-check-input" id="GenRadio2" name="optradio" required>Female
                         </label>
                     </div>
-                    <div class="form-check py-1">
+                    <div class="form-check py-1" id="GenRadio3">
                         <label class="form-check-label">
-                          <input type="radio" class="form-check-input" name="optradio" id="GenRadio3">Other:
+                          <input type="radio" class="form-check-input" name="optradio" id="GenRadio3" required>Other:
                           <input type="text" id="OtherGenderInput" class="mx-3 oIn-Width">
                         </label>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="modal-dialog modal-lg">
+        <div id="div6" class="modal-dialog modal-lg ">
             <div class="modal-content shadow br-12">
                 <div class="modal-body py-3 px-2 mx-2 my-3">
                     <p class="formhead py-1">
                         City of Residence <span style="color: red;" class="mx-1">*</span>
                     </p>
-                    <input type="text" id="ResidentInput" placeholder="Your Answer">
+                    <input type="text" id="ResidentInput" placeholder="Your Answer" required>
                 </div>
             </div>
         </div>
-        </div>
-        <div class="modal-dialog modal-lg">
+        <div id="div7" class="modal-dialog modal-lg ">
             <div class="modal-content shadow br-12">
-                <div class="modal-body py-3 px-2 mx-2 my-3">
+                <div class="modal-body py-3 px-2 mx-2 my-3" id="relRadio">
                     <p class="formhead py-1">
                         Relationship Status <span style="color: red;">*</span>
                     </p>
-                    <div class="form-check py-1">
+                    <div class="form-check py-1" id="relRadio1">
                         <label class="form-check-label">
-                          <input type="radio" class="form-check-input" name="optradio">Single
+                          <input type="radio" class="form-check-input" name="optradio1" id="relRadio1" required>Single
                         </label>
                     </div>
-                    <div class="form-check py-1">
+                    <div class="form-check py-1" id="relRadio2">
                         <label class="form-check-label">
-                          <input type="radio" class="form-check-input" name="optradio">In a relationship
+                          <input type="radio" class="form-check-input" name="optradio1" id="relRadio2" required>In a relationship
                         </label>
                     </div>
-                    <div class="form-check py-1">
+                    <div class="form-check py-1" id="relRadio3">
                         <label class="form-check-label">
-                          <input type="radio" class="form-check-input" name="optradio">Married
+                          <input type="radio" class="form-check-input" name="optradio1" id="relRadio3" required>Married
                         </label>
                     </div>
-                    <div class="form-check py-1">
+                    <div class="form-check py-1" id="relRadio4">
                         <label class="form-check-label">
-                          <input type="radio" class="form-check-input" name="optradio">Divorced
+                          <input type="radio" class="form-check-input" name="optradio1" id="relRadio4" required>Divorced
                         </label>
                     </div>
-                    <div class="form-check py-1">
+                    <div class="form-check py-1" id="relRadio5">
                         <label class="form-check-label">
-                          <input type="radio" class="form-check-input" name="optradio">Complicated
+                          <input type="radio" class="form-check-input" name="optradio1" id="relRadio5" required>Complicated
                         </label>
                     </div>
-                    <div class="form-check py-1">
+                    <div class="form-check py-1" id="relRadio6">
                         <label class="form-check-label">
-                          <input type="radio" class="form-check-input" name="optradio">Widowed
+                          <input type="radio" class="form-check-input" name="optradio1" id="relRadio6" required>Widowed
                         </label>
                     </div>
-                    <div class="form-check py-1">
+                    <div class="form-check py-1" id="relRadio7">
                         <label class="form-check-label">
-                          <input type="radio" class="form-check-input" name="optradio">Other:
-                          <input type="text" id="OtherGenderInput" class="mx-3 oIn-Width">
+                          <input type="radio" class="form-check-input" id="relRadio7" name="optradio1" required>Other:
+                          <input type="text" id="OtherRelationInput" class="mx-3 oIn-Width">
                         </label>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="modal-dialog modal-lg">
+        <div id="div8" class="modal-dialog modal-lg ">
             <div class="modal-content shadow br-12">
                 <div class="modal-body py-3 px-2 mx-2 my-3">
                     <p class="formhead py-1">
@@ -142,15 +144,14 @@
                 </div>
             </div>
         </div>
-        </div>
-        <div class="modal-dialog modal-lg">
+        <div id="div9" class="modal-dialog modal-lg ">
             <div class="modal-content shadow br-12">
-                <div class="modal-body py-3 px-2 mx-2 my-3">
+                <div class="modal-body py-3 px-2 mx-2 my-3" id="wBchoice">
                     <p class="formhead py-1 ">
                         What Brought you here? <span style="color: red;">*</span>
                     </p>
                     <div class="form-check py-1">
-                        <input class="form-check-input" type="checkbox" value="" id="wBchoice1">
+                        <input class="form-check-input" type="checkbox" value="" id="wBchoice1" checked>
                         <label class="form-check-label" for="wBchoice1">
                             Career Issues
                         </label>
@@ -201,7 +202,7 @@
                         <input class="form-check-input" type="checkbox" value="" id="wBchoice9">
                         <label class="form-check-label" for="wBchoice9">
                             Other:
-                            <input type="text" id="OtherGenderInput" class="mx-3 oIn-Width">
+                            <input type="text" id="OtherwBInput" class="mx-3 oIn-Width">
                         </label>
                     </div>
 
@@ -209,14 +210,14 @@
                 </div>
             </div>
         </div>
-        <div class="modal-dialog modal-lg">
+        <div id="div10" class="modal-dialog modal-lg ">
             <div class="modal-content shadow br-12">
-                <div class="modal-body py-3 px-2 mx-2 my-3">
+                <div class="modal-body py-3 px-2 mx-2 my-3" id="feelChoice">
                     <p class="formhead py-1">
                         How are you feeling? <span style="color: red;">*</span>
                     </p>
                     <div class="form-check py-1">
-                        <input class="form-check-input" type="checkbox" value="" id="feelChoice1">
+                        <input class="form-check-input" type="checkbox" value="" id="feelChoice1" checked>
                         <label class="form-check-label" for="feelChoice1">
                             Bitter
                         </label>
@@ -276,9 +277,15 @@
                         </label>
                     </div>
                     <div class="form-check py-1">
+                        <input class="form-check-input" type="checkbox" value="" id="feelChoice11">
+                        <label class="form-check-label" for="feelChoice11">
+                            Lost
+                        </label>
+                    </div>
+                    <div class="form-check py-1">
                         <input class="form-check-input" type="checkbox" value="" id="feelChoice12">
                         <label class="form-check-label" for="feelChoice12">
-                            Lost
+                            Love
                         </label>
                     </div>
                     <div class="form-check py-1">
@@ -333,13 +340,13 @@
                         <input class="form-check-input" type="checkbox" value="" id="wBchoice9">
                         <label class="form-check-label" for="wBchoice9">
                             Other:
-                            <input type="text" id="OtherGenderInput" class="mx-3 oIn-Width">
+                            <input type="text" id="OtherFeelInput" class="mx-3 oIn-Width">
                         </label>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="modal-dialog modal-lg">
+        <div id="div11" class="modal-dialog modal-lg ">
             <div class="modal-content shadow br-12">
                 <div class="modal-body py-3 px-2 mx-2 my-3">
                     <p class="formhead py-0">
@@ -349,26 +356,26 @@
                 </div>
             </div>
         </div>
-        <div class="modal-dialog modal-lg">
+        <div id="div12" class="modal-dialog modal-lg">
             <div class="modal-content shadow br-12">
-                <div class="modal-body py-3 px-2 mx-2 my-3">
+                <div class="modal-body py-3 px-2 mx-2 my-3" id="langRadio">
                     <div class="custom-control custom-radio">
                         <p class="formhead py-1">
                             Preffered language <span style="color: red;">*</span>
                         </p>
-                        <div class="form-check py-1">
+                        <div class="form-check py-1" id="langRadio1">
                             <label class="form-check-label">
-                              <input type="radio" class="form-check-input" name="optradio">Hindi
+                              <input type="radio" class="form-check-input" id="langRadio1" name="optradio3" required>Hindi
                             </label>
                         </div>
-                        <div class="form-check py-1">
+                        <div class="form-check py-1" id="langRadio2">
                             <label class="form-check-label green">
-                              <input type="radio" class="form-check-input" name="optradio">English
+                              <input type="radio" class="form-check-input" name="optradio3" id="langRadio2" required>English
                             </label>
                         </div>
-                        <div class="form-check py-1">
+                        <div class="form-check py-1" id="langRadio3">
                             <label class="form-check-label">
-                              <input type="radio" class="form-check-input" name="optradio">Both
+                              <input type="radio" class="form-check-input" id="langRadio3" name="optradio3" required>Both
                             </label>
                         </div>
                     </div>
@@ -377,7 +384,7 @@
         </div>
         <div class="btncontainer btncontainerWidth">
             <input type="submit" class="btn btn-lg" value="Submit Form">
-            <input type="reset" class="btn btn-lg" value="Reset Form">
+            <input type="reset" class="btn btn-lg" value="Reset Form" onclick="confirm_reset()">
         </div>
     </form>
     <!-- Optional JavaScript; choose one of the two! -->
