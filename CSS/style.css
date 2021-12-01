@@ -60,19 +60,19 @@ input[type=reset] {
 
 @media only screen and (max-width: 600px) {
     .btncontainerWidth {
-        width: 90%;
+        width: 80%;
     }
     .modal-lg {
         width: 300px;
         margin: 5px auto;
     }
-    btn-lg,
-    formhead,
-    cardSub {
+    .btn-lg,
+    .formhead,
+    .cardSub {
         color: green;
-        font-size: 0.89rem;
+        font-size: 18px;
     }
-    btn-lg {
+    .btn-lg {
         padding: 3px 6px;
     }
 }
